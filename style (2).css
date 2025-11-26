@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 25px;
+}
+
+/* Режимді таңдау блоктары */
+.mode-selection {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #e9f7ff;
+}
+
+.mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.mode-buttons button {
+    background-color: #007bff;
+    padding: 12px 25px;
+    font-size: 16px;
+    width: 45%;
+    max-width: 300px;
+}
+
+.mode-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.controls h3 {
+    color: #28a745;
+    margin-top: 0;
+}
+
+.controls label, .controls select {
+    font-size: 16px;
+}
+
+.controls select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Тест аймағы */
+.question-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s;
+}
+
+.question-block:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.options label {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.options label:hover {
+    background-color: #f0f0f0;
+}
+
+/* Нәтижелерді көрсету */
+.results {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid #007bff;
+    background-color: #e9f7ff;
+    border-radius: 8px;
+}
+
+.result-correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.result-incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.result-correct .options label.selected,
+.result-incorrect .options label.selected {
+    font-weight: bold;
+}
+
+.result-incorrect .options label.correct {
+    background-color: #c3e6cb !important;
+    border-color: #155724 !important;
+}
+
+.result-incorrect .options label.selected {
+    background-color: #f5c6cb !important;
+    border-color: #721c24 !important;
+    color: #721c24;
+}
+
+/* Жасырылған радио батырмалар */
+.options input[type="radio"] {
+    margin-right: 8px;
+}.correct {
+    background: #b2ffb2;
+    border-radius: 5px;
+}
+
+.wrong {
+    background: #ffb2b2;
+    border-radius: 5px;
+}
+
+.option-label {
+    display: block;
+    margin: 4px 0;
+    padding: 4px;
+}

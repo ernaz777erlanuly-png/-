@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Модельдеу және Дизайн Тесті</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/color/48/3d-modeling.png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎨 3D Модельдеу және Дизайн: Тест</h1>
+        
+        <div class="mode-selection">
+            <h2>Тест режимін таңдаңыз:</h2>
+            <div class="mode-buttons">
+                <button id="mode-variant-btn">1. Вариантты таңдау (Барлық сұрақтар)</button>
+                <button id="mode-random-btn">2. Кездейсоқ 30 сұрақ (Жалпы қор)</button>
+            </div>
+        </div>
+
+        <div id="variant-mode-controls" class="controls" style="display:none;">
+            <h3>Режим 1: Вариантты таңдау</h3>
+            <label for="variant-select">Вариантты таңдаңыз:</label>
+            <select id="variant-select"></select>
+            <button id="start-variant-test-btn" class="start-btn">Тестті бастау</button>
+        </div>
+
+        <div id="random-mode-controls" class="controls" style="display:none;">
+            <h3>Режим 2: Кездейсоқ 30 сұрақ</h3>
+            <p>Жалпы 156 сұрақ ішінен **30 кездейсоқ сұрақ** таңдалады.</p>
+            <button id="start-random-test-btn" class="start-btn">Тестті бастау</button>
+        </div>
+        
+        <div id="test-area" class="test-area" style="display:none;">
+            </div>
+
+        <button id="submit-test-btn" style="display: none;">Нәтижені тексеру</button>
+
+        <div id="results" class="results" style="display: none;">
+            </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
